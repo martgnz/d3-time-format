@@ -30,7 +30,7 @@
     "postpublish": "git push && git push --tags && cd ../d3.github.com && git pull && cp ../d3-time-format/build/d3-time-format.js d3-time-format.v2.js && cp ../d3-time-format/build/d3-time-format.min.js d3-time-format.v2.min.js && git add d3-time-format.v2.js d3-time-format.v2.min.js && git commit -m \"d3-time-format ${npm_package_version}\" && git push && cd - && zip -j build/d3-time-format.zip -- LICENSE README.md build/d3-time-format.js build/d3-time-format.min.js"
   },
   "dependencies": {
-    "d3-time": "1"
+    "d3-time": "git+ssh://git@github.com:d3/d3-time.git#8b84d80ec5362f49931466f350da2502362a7f5c"
   },
   "devDependencies": {
     "d3-queue": "3",
